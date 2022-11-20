@@ -1,0 +1,176 @@
+// BEGIN NAV
+
+$toggle-size: 32px;
+$bar-size: $toggle-size / 8;
+$bar-space: ($toggle-size - ($bar-size * 5)) / 2;
+
+$bar2-top: $bar-size + $bar-space;
+$bar3-top: $bar2-top * 2;
+
+#nav-container {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#nav-toggle {
+  display: block;
+  width: $toggle-size;
+  height: $toggle-size;
+
+  cursor: pointer;
+
+  transform: rotate(0deg);
+
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+#nav-toggle span {
+  width: 100%;
+  height: $bar-size;
+
+  border-radius: $bar-size / 4;
+
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+
+  // transition time and time function
+  transition: 0.7s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+  top: $bar-size;
+  transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(2) {
+  top: $bar2-top + $bar-size;
+  transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(3) {
+  top: $bar3-top + $bar-size;
+  transform-origin: left center;
+}
+
+#nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -($toggle-size / 32) + $bar-size;
+  left: $bar-size;
+  background-color: white;
+}
+
+#nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: $bar3-top + ($toggle-size / 32) + $bar-size;
+  left: $bar-size;
+  background-color: white;
+}
+
+#nav-overlay.open {
+  transform: scale3d(1, 1, 1);
+}
+
+#nav-overlay {
+  position: absolute;
+  top: $toggle-size;
+  left: -35px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  transition: 1s;
+  transform: scale3d(0, 0, 0);
+}
+
+#nav-fullscreen {
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  transition: ease-in-out 0.25s;
+  transition-delay: 0s;
+
+  visibility: hidden;
+  opacity: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#nav-fullscreen.open {
+  visibility: visible;
+  opacity: 1;
+  transition: ease-in-out 1.5s;
+  transition-delay: 0.2s;
+}
+
+// END NAV
+
+// BEGIN OTHER
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+#nav-overlay {
+  background: linear-gradient(90deg, #002077 10%, #0044ff 50%, #af7dff 90%);
+  opacity: 0.4;
+}
+
+#nav-toggle span {
+  background-color: black;
+}
+
+// span × ...color :black; 
+
+#nav-fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 5vh;
+
+  li:hover {
+    list-style: square;
+  }
+}
+
+// END OTHER
+
+@media screen and (min-width: 1024px) {
+  #nav-container,
+  #nav-overlay,
+  #nav-fullscreen,
+  .mobile-nav,
+  #nav-toggle {
+    display: none;
+  }
+}
+
+// 参考URL　https://codepen.io/marcbizal/pen/YXEmyQ/

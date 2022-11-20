@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/fakeLoader.css">
+
+  <title>My_Portfolio</title>
+
+  <!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6bfff0d01c.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: #f6f6f6;">
+
+  <div class="fakeLoader"></div>
+  <div id="fakeLoader"></div>
+
+  <header>
+
+    <nav class="back-color">
+      <a href="https://ingeniousmorocorn.com/portfolio/">
+        <h1>My_Portfolio</h1>
+      </a>
+    </nav>
+
+    <nav class="drown">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills-works">Skills/works</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="./contact/index.php">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="nav-container">
+      <div id="nav-overlay"></div>
+      <nav id="nav-fullscreen">
+        <ul class="mobile-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skills-works">Skills/works</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="./contact/index.php">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="firstview fixed-bg  inview_re fadeIn">
+      <!--参考 ... https://www.web-jozu.com/web/trouble/iphone-video/ -->
+      <!-- <video poster="./img/hero.png" playsinline autoplay muted loop>
+        <source src="./movie/urban.mp4" type="video/mp4">
+      </video> -->
+      <video src="./movie/urban.mp4" poster="./img/hero.png" autoplay muted playsinline loop></video>
+      <div class="firstview-message">
+        Koya Morohoshi<br>
+        Web Site<br>
+        Portfolio
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <section id="profile">
+      <div class="profile-img fixed-bg inview_re fadeIn">
+        <h2 class="sec-title">Profile</h2>
+      </div>
+
+      <div class="profile-content wrapper">
+        <div class="profile-item">
+          <img src="img/profile.png" alt="profile" class="inview_re fadeIn">
+        </div>
+        <div class="profile-item inview_re fadeIn">
+          <h3 class="item-title">
+            <span class="sub-title">私について<br></span>
+            About me
+          </h3>
+          <dl>
+            <dt style="font-weight: bold;">諸星光哉(モロホシコウヤ) / 22歳<br>
+              2000年1月生まれ、神奈川県出身</dt>
+            <!-- <dd>&yen;500</dd> -->
+            <dt style="font-weight: bold;">フロントエンドエンジニア</dt>
+
+            <dt style="font-weight: bold;">お客様とのコミュニケーションを第一にし、ご要望に合わせて1つ1つ丁寧に制作いたします。</dt>
+
+            <dt>またアフィリエイトブログの運営を通してコピーライティングや、SEOについて学習し実践を繰り返しました。</dt>
+            <dt>特にSEOに関しては書籍やアフィリエイトのプロから学びました。</dt>
+            <!-- <dd>&yen;500</dd> -->
+
+            <dt>その経験をプログラミングでも活かしていけたらと思っています。</dt>
+
+            <dt style="font-weight: bold;">少しでもお力添えが出来れば幸いです。</dt>
+            <!-- <dd>&yen;500</dd> -->
+          </dl>
+        </div>
+        <div class="profile-item inview_re fadeIn">
+          <h3 id="item-title">
+            <span id="sub-title">可能な業務<br></span>
+            Possible Business
+          </h3>
+          <dl>
+            <dt>レスポンシブ対応、jQueryを用いた動きのあるのWebサイト制作</dt>
+            <dt>Bootstrap5を用いたサイト構築</dt>
+            <dt>php,MySQLを用いたシステム構築</dt>
+            <dt>Wordpressのフルコーディネート</dt>
+            <dt>WordPress、プラグインに関するアップデート、保守管理</dt>
+            <dt>HTML,WordPressテンプレートを用いた<br>
+              Webサイト制作、カスタマイズ</dt>
+          </dl>
+        </div>
+        <div class="profile-item">
+          <img src="img/pc-css.jpg" alt="html" class="inview_re fadeIn">
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-works">
+      <div class="skills-works-img fixed-bg inview_re fadeIn">
+        <h2 class="sec-title">Skills/works</h2>
+      </div>
+
+      <div class="skills-works-content wrapper">
+        <div class="skills-works-item">
+          <h3 class="item-title inview_re fadeIn">
+            <span class="sub-title">スキル<br></span>
+            Skills
+          </h3>
+
+          <div id="skills" class="inview_re fadeIn">
+
+            <div class="progress" style="height: 40px;">
+              <div id="js-html" class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">HTML5</div>
+              <span style="margin: 10px auto auto 10px;">90%</span>
+            </div>
+            <p class="skill-desc">SEOを意識したコーディング、信頼できるサイト制作を行っていきます。</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-css" class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">CSS3</div>
+              <span style="margin: 10px auto auto 10px;">90%</span>
+            </div>
+            <p class="skill-desc">ユーザビリティ(Webサイトの「使いやすさ」)に配慮し、見やすいデザインを心がけていきます。</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-bootstrap" class="progress-bar" role="progressbar" style="background-color: blue;"
+                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Bootstrap5</div>
+              <span style="margin: 10px auto auto 10px;">90%</span>
+            </div>
+            <p class="skill-desc">「分かりやすさ」「使いやすさ」を重視したWebサイトを素早く制作します。</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-wordpress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">WordPress</div>
+              <span style="margin: 10px auto auto 10px;">80%</span>
+            </div>
+            <p class="skill-desc">オリジナルテーマを 1 から作成、SEO対策やプラグインの導入など、Wordpressのあらゆるカスタマイズができます</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-sass" class="progress-bar" role="progressbar" style="background-color: pink;"
+                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Sass(scss)</div>
+              <span style="margin: 10px auto auto 10px;">80%</span>
+            </div>
+            <p class="skill-desc">CSSの拡張機能を使用して、作業効率を上げ、見やすいコード作成をしていきます。</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-jquery" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">jQuery</div>
+              <span style="margin: 10px auto auto 10px;">70%</span>
+            </div>
+            <p class="skill-desc">Webサイトで使われるアニメーション・動きをご要望に合わせ実装します。</p>
+            <br>
+            <div class="progress" style="height: 40px;">
+              <div id="js-php" class="progress-bar" role="progressbar" style="background-color: rgb(0, 183, 255);"
+                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">php</div>
+              <span style="margin: 10px auto auto 10px;">70%</span>
+            </div>
+            <p class="skill-desc">簡単なWebシステム、データベースを活用したプログラムの作成も行っております。</p>
+
+          </div>
+
+          <h3 class="item-title inview_re fadeIn" style="margin-bottom: 1rem;">
+            <span class="sub-title">制作実績<br></span>
+            Works
+          </h3>
+
+          <ul id="works" class="work-list">
+
+            <li class="work-item inview_re fadeIn">
+              <div class="work-image work-image_1">
+                <a href="#">
+                  <img src="img/my_portfolio.png" alt="My_Portfolio">
+                </a>
+                <span class="img-desc img-desc_1">≫ページトップへ</span>
+              </div>
+              <div class="work-text">
+                <p class="work-title">タイトル：My_Portfolio</p>
+                <p class="work-skill">使用技術：HTML,CSS,Bootstrap5,jQuery</p>
+                <p class="work-time">制作期間：約3週間</p>
+                <p class="work-desc">今ご覧いただいているサイトになります。</p>
+              </div>
+            </li>
+
+            <li class="work-item reverse  inview_re fadeIn">
+              <div class="work-image work-image_2">
+                <a href="https://ingeniousmorocorn.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="img/template.png" alt="My-Portfolio-template">
+                </a>
+                <span class="img-desc img-desc_2">≫templateサイトへ</span>
+              </div>
+              <div class="work-text">
+                <p class="work-title">タイトル：templateサイト</p>
+                <p class="work-skill">使用技術：HTML,CSS,</p>
+                <p class="work-time">制作期間：約2週間</p>
+                <p class="work-desc">HTMLテンプレートを使用したポートフォリオになります。HTMLテンプレートごとにカスタマイズも可能です。</p>
+                <p>サイトは<a href="https://ingeniousmorocorn.com/" target="_blank"><b>こちら</b></a>からご覧いただけます。</p>
+              </div>
+            </li>
+
+            <li class="work-item inview_re fadeIn">
+              <div class="work-image  work-image_3">
+                <a href="./pages/mosya-img.html" target="_blank" rel="noopener noreferrer">
+                  <img src="img/airbnb-portfolio.png" alt="airbnb-portfolio">
+                </a>
+                <span class="img-desc img-desc_3">≫スクリーンショットはこちら</span>
+              </div>
+              <div class="work-text">
+                <p class="work-title">タイトル：模写コーディング(Airbnb)</p>
+                <p class="work-skill">使用技術：HTML,CSS,Bootstrap4</p>
+                <p class="work-time">制作期間：約1ヵ月</p>
+                <p class="work-desc">Airbnbのサイトを模写コーディングしました。(2021年3月に作成)</p>
+                <p>詳細は<a href="https://ingeniousmorocorn.com/pages target=" _blank"><b>こちら</b></a>からご覧いただけます。</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="price">
+      <div class="price-img fixed-bg inview_re fadeIn">
+        <h2 class="sec-title">Price</h2>
+      </div>
+
+      <div class="price-content wrapper">
+        <h3 class="item-title inview_re fadeIn" style="margin-bottom: 1rem;">
+          <span class="sub-title">価格表<br></span>
+          Price
+        </h3>
+        <div class="price-item inview_re fadeIn">
+          <dl class="code-price">
+            <dt>WordPressサイトの制作</dt>
+            <dd>100,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>LP制作(1ページ、レスポンシブ対応込み)</dt>
+            <dd>50,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>トップページのコーディング(レスポンシブ対応込み)</dt>
+            <dd>20,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>下層ページ</dt>
+            <dd>5,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>Wordpress化</dt>
+            <dd>20,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>サイト修正(1箇所あたり)</dt>
+            <dd>1,000円～</dd>
+          </dl>
+          <dl class="code-price">
+            <dt>HTML,Wordpressテンプレートを用いたWeb制作、カスタマイズ</dt>
+            <dd>30,000円～※</dd>
+          </dl>
+          <p>※Wordpress,HTMLテンプレートは<br>別料金となります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="place">
+      <div class="place-img fixed-bg inview_re fadeIn">
+        <h2 class="sec-title">Place</h2>
+      </div>
+
+      <div class="place-content wrapper">
+        <div class="place-item">
+          <h3 class="item-title inview_re fadeIn">
+            <span class="sub-title">活動場所<br></span>
+            Place of Activity
+          </h3>
+          <div class="item-map inview_re fadeIn">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52010.341305543734!2d139.36759943666755!3d35.438790124893494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601855089d00534b%3A0x351d4a5c74e247b2!2z56We5aWI5bed55yM5rW36ICB5ZCN5biC!5e0!3m2!1sja!2sjp!4v1639376041475!5m2!1sja!2sjp"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="item-info inview_re fadeIn">
+            <p>
+              Kanagawa ebina-city<br>
+              神奈川県　海老名市
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="inview_re fadeIn">
+    <h6>My_Portfolio</h6>
+    <a href="#">Home</a>
+    <a href="#profile">Profile</a>
+    <a href="#skills-works">Skills/works</a>
+    <a href="#price">Price</a>
+    <a href="./contact/index.php">Contact</a>
+    <div class="icon-flex">
+      <a href="https://twitter.com/koya_coding22" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; Koya Morohoshi</p>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="./js/fakeLoader.js"></script>
+  <script src="./js/jquery.inview.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
